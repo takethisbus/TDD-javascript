@@ -1,6 +1,8 @@
+const ProductClient = require("./product_client");
+
 class ProductService {
-  constructor(productClient) {
-    this.productClient = productClient;
+  constructor() {
+    this.productClient = new ProductClient();
   }
 
   fetchAvailableItems() {
