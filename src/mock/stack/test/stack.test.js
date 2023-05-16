@@ -10,8 +10,9 @@ describe("Stack", () => {
     expect(stack.size()).toBe(0);
   });
 
-  it("allow to push item", () => {
-    expect(stack.push("first")).toEqual(["first"]);
+  it("allows to push item", () => {
+    stack.push("first");
+    expect(stack.size()).toBe(1);
   });
 
   describe("pop", () => {
